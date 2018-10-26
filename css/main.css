@@ -1,0 +1,127 @@
+header .title {
+  margin-top: 1em;
+}
+
+.wrapper > .container {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.wrapper {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.small {
+  font-size: 0.6em;
+}
+
+.large {
+  font-size: 2.0em;
+}
+
+.x-large {
+  font-size: 3.5em;
+}
+
+.row .rating {
+  padding-top: 4rem;
+}
+
+.rating .value {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.pos {
+  color: #19f3be;
+}
+
+.neg {
+  color: #ff036a;
+}
+
+blockquote {
+  height: 70px;
+}
+
+#donate {
+  border: 3px solid #4bafff;
+}
+
+
+/*---------- star rating ----------*/
+.star-rating, .back-stars, .front-stars {
+  display: flex;
+}
+
+.star-rating {
+  align-items: center;
+  font-size: 3em;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.back-stars {
+  color: #bb5252;
+  position: relative;
+  text-shadow: 4px 4px 10px #843a3a;
+}
+
+.front-stars {
+  color: #FFBC0B;
+  overflow: hidden;
+  position: absolute;
+  text-shadow: 2px 2px 5px #d29b09;
+  top: 0;
+}
+
+/** Tooltip **/
+ /* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
