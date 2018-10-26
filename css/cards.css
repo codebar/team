@@ -1,0 +1,135 @@
+/**
+ *  Source: https://codepen.io/shibl/pen/PzBwjR
+ * */
+
+.card-container {
+  -webkit-perspective: 500px;
+  perspective: 500px;
+}
+
+.card-container:hover .card, .card-container .card.hover{
+  -webkit-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.card {
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.back {
+  -webkit-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+  padding: 10px;
+  background-color: #19f3be;
+  color: white;
+}
+
+.back.odd {
+  background-color: #4bafff;
+}
+
+
+/*Custom Styles*/
+.cards-container{
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  flex-flow: row wrap;
+  justify-content: left;
+}
+
+.card {
+  width: 130;
+  height: 130;
+  margin: 10px;
+}
+
+#directors .card .name {
+  font-size: 1.6em;
+}
+
+.card .name {
+  font-size: 1.4em;
+  font-weight: 800;
+  display: block;
+  line-height: 1.2em;
+  word-wrap: break-word;
+}
+
+.name.shrink, .name.small,  .name .small, .card .chapter.smaller  {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+
+.card .chapter.smallest {
+  padding-top: 0.2em;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+.card .chapter.small {
+  padding-top: 0.2em;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+.name .smaller, .name.smaller {
+  font-size: 0.8em;
+}
+
+.card .chapter {
+  padding-top: 0.15em;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  display: block;
+}
+
+.card .chapter a, .card .previous a {
+  color: highlight;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.card .chapter.small {
+  font-size: 1.1em;
+  word-wrap: break-word;
+}
+
+.card .previous {
+  font-size: 0.8em;
+}
+
+.card .role {
+  font-size: 0.7em;
+  display: block;
+}
+
+.front, .back {
+  box-shadow: 0 1px 6px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+img {
+  display: block;
+}
